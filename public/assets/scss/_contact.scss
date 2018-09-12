@@ -1,0 +1,270 @@
+.fifth{
+  background: linear-gradient(to bottom, $white 0%,#{fade-out($black, 1)} 30%,#{fade-out($white, 1)} 100%), url('../img/tln.jpg') center 50%;
+  background: linear-gradient(to bottom, $white 15%,#{fade-out($black, 1)} 30%,#{fade-out($white, 1)} 100%), url('../img/stone.jpg') center 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 5%;
+  .contact{
+    // background: red;
+    min-height: 110vh;
+    display: grid;
+    grid-template-areas: 
+      '. form links';
+    grid-template-columns: 15% 45% 40%;
+    width: 100%;
+
+    @media screen and (max-width: 1150px) {
+      grid-template-areas:
+        '. form form .'
+        '. links links .';
+
+      grid-template-columns: 10% 40% 40% 10%;
+    }
+
+    .form{
+    
+      grid-area: form;
+      // background: red;
+      padding: 0;
+      margin-top: 10%;
+      
+      form{
+        .form-wrap{
+          .form-head{
+            font-size: 2.5rem;
+            grid-area: head;
+            h2{
+              @extend %h2;
+              margin-bottom: 10%;
+            }
+          }
+          div{
+            width: 49.5%;
+            display: inline-block;
+            margin-bottom: 2%;
+            position: relative;
+            input{
+              width: 95%;
+              margin-left: 2.5%;
+              height: 3rem;
+              font-size: 1.4rem;
+              @media screen and (max-width: 1150px) {
+                font-size: 1.3rem;
+              }
+              padding-left: 20%;
+              &:focus{
+                padding-left: 15%;
+              }
+              &:focus ~ .form-icon{
+                font-size: 120%;
+                padding-left: 2%;
+                padding-top: 0.5%;
+                color: $gray;
+              }
+            }
+            input, textarea{
+              transition: $base-transition;
+              border-radius: 1rem;
+              border-style: none;
+              background: rgba($base-white, .5);
+              &:focus{
+                background: $base-white;
+              }
+            }
+            span{
+              align-items: center;
+              position: absolute;
+              left: 6.5%;
+              top: 25%;
+              font-size: 150%;
+              padding-left: 5%;
+              transition: $base-transition;
+            }
+          }
+          div:nth-of-type(1){
+            width: 100%;
+          }
+          div:nth-of-type(6){
+            width: 100%;
+            textarea{
+              width: 97%;
+              margin-left: 1.5%;
+              height: 15rem;
+              padding-left: 5%;
+              padding-right: 5%;
+              padding-top: 2%;
+              padding: 5% 12%;
+              font-size: 1.4rem;
+              @media screen and (max-width: 1150px) {
+                font-size: 1.3rem;
+              }
+              resize: none;
+              font-family: $font-main;
+              &:focus{
+                padding-left: 8%;
+                padding-right: 5%;
+                padding-top: 2%;
+              }
+              &:focus ~ #plane {
+                font-size: 140%;
+                padding-top: 0.5%;
+                padding-left: 1%;
+                color: $gray;
+              }
+            }
+            span{
+              left: 3.3%;
+              top: 7%;
+              font-size: 300%;
+              padding-left: 2%;
+              padding-top: 2%;
+              transition: $base-transition;
+            }
+          }
+
+          button{
+            width: 15rem;
+            height: 5rem;
+            margin-left: 3%;
+            margin-top: 3%;
+            border-radius: 1rem;
+            border-style: none;
+            background: rgba($base-white, .8);
+            font-size: 1.8rem;
+            color: $gray;
+            transition: $base-transition;
+            cursor: pointer;
+            &:hover{
+              background: rgba($base-white, .4);
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 1150px) {
+        h2{
+          text-align: center;
+          margin-bottom: 5%;
+        }
+      }
+      @media #{$phone} {
+        h2{
+          text-align: center;
+          margin-bottom: 5%;
+        }
+        form{
+          .form-wrap{
+            div{
+              width: 100%;
+              input{
+                width: 100%;
+                margin-left: 0;
+                padding-left: 20%;
+                &:focus ~ .form-icon{
+                  padding-left: 0%;
+                }
+              }
+              span{
+                padding-left: 0;
+              }
+            }
+            button{
+              width: 100%;
+              margin-left: 0;
+            }
+            div:nth-of-type(6){
+              textarea{
+                padding-left: 30%; 
+                &:focus{
+                  padding-left: 15%;
+                  padding-top: 5%;
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+    .links{
+      // background: blue;
+      grid-area: links;
+      margin-top: 35%;
+      margin-right: 10%;
+      div{
+        text-align: right;
+        padding-right: 30%;
+        margin-bottom: 10%;
+        // background: red;
+        @media screen and (max-width: 1150px) {
+          width: 100%;
+          float: right;
+        }
+        p{
+          display: inline;
+          font-size: 1.8rem;
+          font-weight: bold;
+          @media screen and (max-width: 1150px) {
+            font-size: 1.3rem;
+          }
+        }
+        span{
+          text-align: right;
+          margin-left: 7%;
+          margin-right: 7%;
+          font-size: 150%;
+          @media screen and (max-width: 1150px) {
+            padding-right: 0;
+            margin-right: 0;
+          }
+        }
+        .link-ad{color: $base-orange-2;}
+        .link-phone{color: $base-green-1;}
+        .link-mail{color: $base-blue;}
+        a{
+          text-decoration: none;
+          color: $base-black;
+          transition: $base-transition;
+          &:hover{ color: $base-blue-1; }
+        }
+      }
+
+    @media screen and (max-width: 1150px) {
+      margin-right: 0;
+      div{
+        padding-right: 0;
+        p{
+          color: $base-white;
+        }
+      }
+    }
+  }
+}
+  
+  .copy-right{
+    position: relative;
+    bottom: 10;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: $base-white-0; 
+    // color: $base-orange;
+    padding-bottom: 0;
+    // background: red;
+    // display: none;
+    @media screen and (max-width: 1150px) {
+      margin-top: 10%;
+      color: white;
+    }
+    
+    p{
+      font-weight: bold;
+      margin: 0;
+
+      @media screen and (max-width: 1150px) {
+        font-size: 1rem;
+      }
+    }
+  }
+}

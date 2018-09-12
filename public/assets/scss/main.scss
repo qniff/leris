@@ -1,0 +1,27 @@
+@import 'custom';
+@import 'nav';
+@import 'header';
+@import 'what';
+@import 'about';
+@import 'tech';
+@import 'contact';
+
+body {
+  font: 100% $font-main;
+  color: $primary;
+  margin: 0;
+}
+
+.wrapper{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.first{
+  min-height: 100vh;
+}
+
+

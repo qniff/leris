@@ -1,0 +1,102 @@
+.fourth{
+
+  .tech{
+
+    display: grid;
+    grid-template-areas: 
+      '. head head .'
+      '. img-0 text-0 .'
+      '. text-1 img-1 .'
+      '. text-1 img-1-1 .'
+      '. img-2 text-2 .';
+    // grid-gap: 1%;
+    grid-template-columns: 20% 30% 30% 20%;
+
+    .head{
+      grid-area: head;
+      margin-top: 10%;
+      margin-bottom: 5%;
+      
+      h2{
+        @extend %h2;
+        text-align: center;
+      }
+    }
+    
+    .img, .text{
+      margin-bottom: 10%;
+    }
+
+    .img{
+      img{
+        max-width: 100%;
+        margin-bottom: 5%;
+      }
+    }
+
+    .text{
+      padding: 0% 5%;
+      h3{
+        @extend %h3;
+        margin-bottom: 7%;
+      }
+      p{
+        @extend %p;
+        // margin-top: 2%;
+      }
+    }
+
+    .img-1{
+      margin-top: -10%;
+    }
+
+    .img-1-1 img{
+      transform: scaleX(-1);
+      margin-top: -15%;
+    }
+
+    .img-1 img, .img-1-1 img{
+      max-height: 500%;
+    }
+    
+    .img-2, .text-2{
+      margin-top: 20%;
+    }
+
+    
+    
+    .text-0{ grid-area: text-0; }
+    .text-1{ grid-area: text-1; h3{text-align: right;}}
+    .text-2{ grid-area: text-2; }
+    .img-0{ grid-area: img-0; }
+    .img-1{ grid-area: img-1; }
+    .img-1-1{ grid-area: img-1-1; }
+    .img-2{ grid-area: img-2; }
+
+    @media screen and (max-width: 1150px) {
+      // background: red;
+      text-align: center;
+      grid-template-areas: 
+      '. head head .'
+      '. text-0 text-0 .'
+      '. img-0 img-0 .'
+      '. text-1 text-1 .'
+      '. img-1 img-1 .'
+      '. img-1-1 img-1-1 .'
+      '. text-2 text-2 .'
+      '. img-2 img-2 .';
+      .img-1-1, .img-1{
+        // background: red;
+        min-height: 100px;
+      }
+
+      .text-1{h3{text-align: center;}}
+      .img-2, .text-2{
+        margin-top: 0%;
+      }
+    }
+
+  }
+
+
+}

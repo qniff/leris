@@ -1,0 +1,94 @@
+// Import custom font from Google
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+// Override / set color variables
+$white: #fff;
+$black: #000;
+$green: #00e389;
+$blue: #3399ff;
+$orange: #f26c22;
+$yellow: #ffd925;
+$red: #e5001e;
+$primary: $black;
+
+// Create grayscale
+$gray-dark: #292b2c;
+$gray: #3f3f3f;
+$gray-light: #7e7e7e;
+$gray-lighter: #817f7f;
+$gray-lightest: #fafafa;
+
+// Create base
+$base-white: $white;
+$base-white-0: #dbeff8;
+$base-yellow: $yellow;
+$base-yellow-0: #ffc400;
+$base-orange: #F1BE56;
+$base-orange-0: #EF9C53;
+$base-orange-1: #ffa127;
+$base-orange-2: #f07714;
+$base-orange-d: #ac7000;
+$base-orange-d-0: #905e00;
+$base-black: $black;
+$base-blue: #3876e2;
+$base-blue-0: #133671;
+$base-blue-1: #2386C2;
+$base-blue-2: #98d0f0;
+
+// $base-blue-0: #0b5f16;
+// $base-blue-1: rgb(40, 153, 6);
+// $base-blue-2: rgb(152, 208, 240);
+$base-green: rgb(0, 189, 41);
+$base-green-1: rgb(40, 155, 65);
+
+$base-transition: all 0.3s ease 0s;
+$base-radial: radial-gradient(#{fade-out($white, 0)} 30%,#{fade-out(transparent, 1)} 70%);
+$base-radial-0: radial-gradient(#{fade-out($white, .6)} 40%,#{fade-out(transparent, 1)} 75%);
+$base-radial-1: radial-gradient(#{fade-out($white, 0)} 10%,#{fade-out(transparent, 1)} 75%);
+$base-radial-2: radial-gradient(#{fade-out($white, 0)} 50%,#{fade-out(transparent, 1)} 70%);
+$base-radial-3: radial-gradient(#{fade-out($white, .1)} 30%,#{fade-out(transparent, 1)} 70%);
+
+$paragraph-margin-bottom: 0;
+
+// Override fonts
+$font-family-sans-serif: 'Raleway', sans-serif;
+$font-family-serif: Georgia, 'Times New Roman', Times, serif;
+$font-family-monospace: Menlo, Monaco, Consolas, 'Liberation Mono',
+  'Courier New', monospace;
+$font-family-roboto:  'Raleway:100', sans-serif;
+$font-family-base: $font-family-sans-serif;
+$font-main: 'Lora', serif;
+$font-main: 'Montserrat', sans-serif;
+
+// Resonsiveness
+$phone: "only screen and (min-device-width : 320px) and (max-device-width : 480px)";
+$tablet: "only screen and (min-device-width : 768px) and (max-device-width : 1024px)";
+$iphone5: "only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2)";
+$ipadpro: "only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2)";
+// Inheritance
+
+%h2 {
+  font-size: 3rem;
+  @media #{$phone}{
+    font-size: 2rem;
+  }
+}
+%h3 {
+  color: $base-blue-1;
+  font-size: 2.5rem;
+  font-weight: 1000;
+  margin-top: 0;
+  padding-top: 5%;
+  @media #{$phone}{
+    font-size: 1.5rem;
+  }
+}
+
+%p {
+  font-size: 1.5rem;
+  padding-bottom: 5%;
+  @media #{$phone}{
+    font-size: 1rem;
+  }
+}
