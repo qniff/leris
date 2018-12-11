@@ -124,6 +124,9 @@
 #main-nav .navbar-nav .nav-item {
   margin-left: 1rem;
 }
+#main-nav .navbar-nav .nav-item .flags {
+  margin-top: 0.5rem;
+}
 #main-nav .navbar-nav .nav-item a {
   color: black;
 }
@@ -152,7 +155,7 @@
   padding-top: 5vh;
   text-align: center;
   height: 70vh;
-  background: linear-gradient(to bottom, #fff -300%, rgba(0, 0, 0, 0) 83%, rgba(255, 255, 255, 0.95) 100%), url("../img/bur2.jpeg") center 30%;
+  background: linear-gradient(to bottom, #fff -300%, rgba(0, 0, 0, 0) 83%, rgba(255, 255, 255, 0.95) 100%), url("../img/bur2.webp") center 30%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -545,7 +548,10 @@
   grid-area: text-1;
 }
 .fourth .tech .text-1 h3 {
-  text-align: right;
+  text-align: center;
+}
+.fourth .tech .text-1 p {
+  text-align: center;
 }
 .fourth .tech .text-2 {
   grid-area: text-2;
@@ -579,7 +585,7 @@
 }
 
 .fifth {
-  background: linear-gradient(to bottom, #fff 15%, rgba(0, 0, 0, 0) 30%, rgba(255, 255, 255, 0) 100%), url("../img/stone_mini_mini.jpg") center 0%;
+  background: linear-gradient(to bottom, #fff 15%, rgba(0, 0, 0, 0) 30%, rgba(255, 255, 255, 0) 100%), url("../img/stone_mini_mini.webp") center 0%;
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 5%;

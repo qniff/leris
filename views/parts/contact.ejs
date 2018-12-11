@@ -5,35 +5,35 @@
     <div class='form'>
       <form action='/mail' method='post'>
         <div class='form-wrap'>
-          <div class='form-head'><h2>Свяжитесь с нами</h2></div>
+          <div class='form-head'><h2><%= contact.head %></h2></div>
           <div>
-            <input type='text' name='name' placeholder="Имя" required>
+            <input type='text' name='name' placeholder="<%= contact.phName %>" required>
             <span class='form-icon'><i class='fas fa-user'></i></span>
           </div>
 
           <div>
-            <input type='text' name='company' placeholder="Фирма">
+            <input type='text' name='company' placeholder="<%= contact.phCompany %>">
             <span class='form-icon'><i class='fas fa-globe-americas'></i></span>
           </div>
 
           <div>
-            <input type='email' name='email' placeholder="Почтовый ящик" required>
+            <input type='email' name='email' placeholder="<%= contact.phMail %>" required>
             <span class='form-icon'><i class='fa fa-at'></i></span>
           </div>
 
           <div>
-            <input type='text' name='phone' placeholder="Телефон">
+            <input type='text' name='phone' placeholder="<%= contact.phPhone %>">
             <span class='form-icon'><i class='fa fa-phone'></i></span>
           </div>
 
           <div>
-            <textarea type='text' name='msg' placeholder="Сообщение" required></textarea>
+            <textarea type='text' name='msg' placeholder="<%= contact.phMsg %>" required></textarea>
             <span id='plane'><i class='fas fa-paper-plane'></i></span>
           </div>
 
           <div>
             <button>
-              Отправить
+              <%= contact.btn %>
             </button>
           </div>
 
@@ -44,17 +44,17 @@
 
     <div class='links'>
       <div>
-        <p>Kivila 16, 13917 Tallinn</p>
+        <p><%= contact.address %></p>
         <span class='link-ad'><i class="fas fa-map-marker-alt fa-2x"></i></span>
       </div>
 
       <div>
-        <a href='tel:+37258503321'><p id='foot-num'>+372 58503321</p></a>
+        <a href='tel:<%= contact.phone %>'><p id='foot-num'><%= contact.phone %></p></a>
         <span class='link-phone'><i class="fas fa-phone fa-2x"></i></span>
       </div>
 
       <div>
-        <a href="mailto:info@leris.ee"><p id='foot-mail'>info@leris.ee</p></a>
+        <a href="mailto:<%= contact.mail %>"><p id='foot-mail'><%= contact.mail %></p></a>
         <span class='link-mail'><i class="fas fa-envelope fa-2x"></i></span>
       </div>
     </div>
@@ -62,7 +62,7 @@
 
   <div class='copy-right'>
     <p>
-      © 2018 | Leris Baltic OÜ | Все права защищены
+      <%= contact.copyright %>
     </p>
   </div>
 </div>

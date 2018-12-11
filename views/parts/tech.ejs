@@ -1,31 +1,29 @@
 <div class='fourth'>
   <div id='tech' class='tech'>
-    <div class='head'><h2>Наша техника</h2></div>
+    <div class='head'><h2><%= tech.head %></h2></div>
 
-    <div class='img img-0'><img title='Taken from: https://www.ditchwitch.com' src='https://www.ditchwitch.com/sites/default/files/styles/product_walkaround/public/JT30-right_0.png?itok=nwD4swLu'></div>
+    <div class='img img-0'><img alt='puurimisseade ,буровая установка ,drilling rig'title='Taken from: https://www.ditchwitch.com' src='https://www.ditchwitch.com/sites/default/files/styles/product_walkaround/public/JT30-right_0.png?itok=nwD4swLu'></div>
     <div class='text text-0'>
-      <h3>Буровая установка</h3>
-      <p><b>DitchWitch 3020AT</b> - прокладывает в скальном грунте трубопроводы диаметром от 20мм до 350мм, в мягких грунтах от 20мм до 500мм.</p>
+      <h3><%= tech.drill.head %></h3>
+      <p><b><%= tech.drill.name %></b> - <%= tech.drill.desc %></p>
     </div>
 
     <div class='img img-1'><img title='Taken from: https://cnet2.cbsistatic.com'src='https://cnet2.cbsistatic.com/img/zGOcCeITX8e8MH69dgLI3nQJ2eU=/830x467/2018/08/23/48d4bf78-06c3-4204-a465-7b3d846c3d8c/2018FOV350006_1280_03.png'></div>
     <div class='img img-1-1'><img title='Taken from: http://www.peugeotboxervansforsale.com' src='http://www.peugeotboxervansforsale.com/uploads/images/expert352-4.png'></div>
     <div class='text text-1'>
-      <h3>Автобусы</h3>
-      <p><b>Ford Tranzit t350</b>
-        <br>Грузоподъемность 1.75т
-        <br>Объем 2.4м³</p>
-      <p><b>Peugeot Expert</b>
-        <br>Грузоподъемность 1т
-        <br>Объем 2м³</p>
+      <h3><%= tech.bus.head %></h3>
+      <p><b><%= tech.bus.name0 %></b>
+        <br><%= tech.bus.cap0 %>
+        <br><%= tech.bus.vol0 %></p>
+      <p><b><%= tech.bus.name1 %></b>
+        <br><%= tech.bus.cap1 %>
+        <br><%= tech.bus.vol1 %></p>
     </div>
 
-    
-
-    <div class='img img-2'><img title='Taken from: https://www.ritmo.it/'src='https://www.ritmo.it/assets/uploads/2014/04/multimedia_DELTA_500_EASY_LIFE.jpg'></div>
+    <div class='img img-2'><img alt='keevitusmasin, сварочный аппарат, welding machine' title='Taken from: https://www.ritmo.it/'src='https://www.ritmo.it/assets/uploads/2014/04/multimedia_DELTA_500_EASY_LIFE.jpg'></div>
     <div class='text text-2'>
-      <h3>Сварочные аппараты</h3>
-      <p><b>Ritmo 160 и Ritmo 315</b> - сварка полиэтиленовых труб методом стыка диаметром от 40мм до 315мм.</p>
+      <h3><%= tech.weld.head %></h3>
+      <p><b><%= tech.weld.name %></b> - <%= tech.weld.desc %></p>
     </div>
 
   </div>

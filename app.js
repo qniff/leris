@@ -17,6 +17,10 @@ app.use(bodyParser.json())
 
 require('./routes')(app)
 
+require('./ee')(app)
+require('./ru')(app)
+require('./en')(app)
+
 server.listen(port, () => {
   console.log('Server listening at port %d', port)
 })
