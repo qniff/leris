@@ -15,11 +15,11 @@ app.use(express.static(__dirname + '/public/'))
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 
-require('./routes')(app)
+require('./content/routes')(app)
 
-require('./ee')(app)
-require('./ru')(app)
-require('./en')(app)
+require('./content/ee')(app)
+require('./content/ru')(app)
+require('./content/en')(app)
 
 server.listen(port, () => {
   console.log('Server listening at port %d', port)
