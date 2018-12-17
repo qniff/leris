@@ -463,6 +463,9 @@
   width: 100%;
   display: inline-block;
 }
+.third .about .text p {
+  width: 300px;
+}
 .third .about .text h3 {
   grid-area: leris;
 }

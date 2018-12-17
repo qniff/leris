@@ -4,8 +4,8 @@ module.exports = (app) => {
       head: "Our team",
       head0: "Leris Baltic OÜ",
       p0: "Oleksandr Leonov",
-      p1: "Sergei Ryndin",
-      p2: "Dmitri Ryndin",
+      p1: "Sergei",
+      p2: "Dmitri",
       t0: "+37258503321",
       t1: "+37256705112",
       t2: "+37256888109"

@@ -30,7 +30,12 @@ z-index: 0;
     padding-bottom: 20%;
     b, p{
       width: 100%;
+      // width: 100px;
       display: inline-block;
+    }
+    p{
+      width: 300px;
+      // width: 100%;
     }
     grid-area: text;
     display: grid;
